@@ -7,11 +7,13 @@ public class Main {
         Person person1 = new Person();
         person1.name = "Роман";
         person1.age = 50;
-        System.out.println("Меня зовут " + person1.name + "," + " и мне " + person1.age + " лет");
+        person1.sayHello();
+        person1.speak();
 
         Person person2 = new Person();
         person2.name = "Вова";
         person2.age = 25;
-        System.out.println("Меня зовут " + person2.name + "," + " и мне " + person2.age + " лет");
+        person2.speak();
+
     }
 }
