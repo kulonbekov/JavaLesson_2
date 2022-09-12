@@ -1,19 +1,26 @@
 package com.company;
 
+import com.company.models.MethodFinal;
 import com.company.models.Person;
 
 public class Main {
     public static void main(String[] args) {
-        Person person1 = new Person();
-        person1.name = "Роман";
-        person1.age = 50;
-        person1.sayHello();
-        person1.speak();
+        //MethodFinal.getInfo();
 
-        Person person2 = new Person();
-        person2.name = "Вова";
-        person2.age = 25;
-        person2.speak();
+        Person person1 = new Person("Taalay", 29);
+        Person person2 = new Person("Adilet", 29);
+        //Person.printNumberOfPeople();
+
+        /*StringBuilder sb = new StringBuilder("hello");
+        System.out.println(sb.toString());
+        sb.append(" my").append(" friend");
+        System.out.println(sb.toString());*/ //работа с StringBuilder
+
+
+
+
+
+
 
     }
 }
