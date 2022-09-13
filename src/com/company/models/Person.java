@@ -5,7 +5,7 @@ import com.company.interfaces.Operation;
 public class Person implements Operation {
     private String name;
     private int age;
-    private static int countPeople;
+    //private static int countPeople;
 
 
     public Person() {
@@ -16,7 +16,7 @@ public class Person implements Operation {
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
-        countPeople++;
+        //countPeople++;
     }
     public String getName() {
         return name;
@@ -49,7 +49,14 @@ public class Person implements Operation {
         //System.out.println("Описание: " + description);
     }
 
-    public static void printNumberOfPeople(){
+    /*public static void printNumberOfPeople(){
         System.out.println("Колчество сотрудников в офисе " + countPeople);
+    }*/
+
+    @Override
+    public String toString() {
+        return name + "," + age;
     }
+
+
 }
